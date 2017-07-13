@@ -1,0 +1,23 @@
+{
+  "restartable": "rs",
+  "ignore": [
+    ".git",
+    "node_modules/**/node_modules"
+  ],
+  "verbose": true,
+  "execMap": {
+    "js": "node"
+  },
+  "watch": [
+    "app/",
+    "routes/",
+    "."
+  ],
+  "ext": "js json",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "mocha --timeout 10000"
+  },
+  "legacyWatch": true
+}
